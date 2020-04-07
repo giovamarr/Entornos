@@ -1,0 +1,251 @@
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>                                  Te Redirige a la pagina google
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>                  Abre una nueva ventana con la pagina google
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">      Hypervinculo sin cerrar
+<a href="#">Click aquí para ir a Google</a>                                                         Hypervinculo sin pagina a la que redirecionar
+<a href="#arriba">Click aquí para volver arriba</a>                                                 Te envia a la ancla de nombre arriba
+<a name="arriba" id="arriba"></a>                                                                   Ancla de nombre arriba
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>         Muestra un link que te Redirige a la pagina google y una imagen sin vinculo
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>        Muestra una imagen que te Redirige a la pagina google si la clickeas y una link sin vinculo
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>         Muestra una imagen y un link que te Redirige a la pagina google si la clickeas
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+ href="http://www.google.com.ar">Click aquí</a></p>                                                 Muestra una imagen y un link que te Redirige a la pagina google si la clickeas
+3.c)
+
+<ul>
+<li>xxx</li>                    Lista no ordenada
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+
+<ol>
+<li>xxx</li>                    Lista ordenada
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+
+<ol>
+<li>xxx</li>                     Lista ordenada con espacios de una linea
+</ol>                            Son 3 lista con dif value por lo cual la muestra igual al anterior
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol>
+
+
+<blockquote>                    Lista ordenada escrita a mano
+<p>1. xxx<br />                 Usa  blockquote que es para  insertar citas en forma de bloques de contenido                 
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+
+
+3.d)
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>                               Tabla de 2 columnas y 3 filas
+<th>Columna 2</th>                               Los nombres de los head se escribieron en <th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+<table border="1" width="300">
+<tr>                                            
+<td><div align="center"><strong>Colum               Tabla de 2 columnas y 3 filas
+na1</strong></div></td>                              Los nombres de los head se escribieron en <td> pero con el mismo formato que <th>
+<td><div align="center"><strong>Columna
+2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+3.e)
+<table width="200">
+<caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>                           Tabla con titulo usando caption                    
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>                            tabla con titulo escrito en la primera fila combinando 
+</tr>                                                       3 columnas con colspan
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+3.f)
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>                tabla con titulo escrito en la primera fila combinando 3 columnas de la fila 1 con colspan
+<td bgcolor="#dddddd">&nbsp;</td>                            y combinando dos celdas(fila 2 y 3,columna 1) con rowspan
+<td bgcolor="#dddddd">&nbsp;</td>                            con las celda de color  bgcolor="#dddddd"
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>                             tabla con titulo escrito en la primera fila combinando 3 columnas con colspan
+</tr>                                                        y combinando dos celdas(fila 2,columna 1 y 2) con colspan 
+<tr>                                                        con las celda de color  bgcolor="#dddddd"
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+3.g)
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div                                     tabla con titulo escrito en la primera fila combinando 2 columnas con colspan
+align="center">Título</div></td>                         y combinando fila 2 y 3 de la columna 1
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200" border="1" cellpadding="0"                   tabla con titulo escrito en la primera fila combinando 2 columnas con colspan
+cellspacing="0">                                                y combinando fila 2 y 3 de la columna 1
+<tr>                                                            y bordes negros simples
+<td colspan="2"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+3.h)
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">                      Login con boton que te envia a procesar.php en una nueva pestaña
+<fieldset>                                                                                              los dos textfield aparecen escritos
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+<form id="form2" name="form2" action="" method="get" target="_blank">                    login con boton que abre una nueva pestaña             
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>                                                                               login con boton que reinicia los textfield y envia los datos a un mail                 
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+
+3.i)
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />             boton con imagen usando src
+<b>CLICK AQUÍ</b></button></label>
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />                   boton comun sin imagen         
+</label>
+
+3.j)
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />          ambas opciones tienen el mismo nombre    
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />         opciones con distinto nombre   
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+3.k)
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>                           Lista mostrada en un droplist
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">                      lista en una ventanita con una Scrollbar
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>

@@ -1,0 +1,54 @@
+1) HTML(HyperText Markup Language) Es un lenguaje de marcado para la elaboración de páginas web y define una estructura básica y un código (denominado código HTML)
+para la definición de contenido de una página web. HTML es el lenguaje de marcado principal de la World Wide Web.
+
+
+El HTML fue desarrollado originalmente por Tim BernersLee y fue popularizado por el navegador Mosaic. Durante los años 90 ha proliferado con el crecimiento explosivo de
+la Web. Durante este tiempo, el HTML se ha desarrollado de diferentes maneras. La Web depende de que los autores de páginas Web y las compañías compartan las
+mismas convenciones de HTML. Esto ha motivado el trabajo colectivo en las especificaciones del HTML.
+Durante sus primeros cinco años (1990-1995), HTML pasó por una serie de revisiones y experimentó una serie de extensiones, alojadas principalmente en el CERN
+(Organización Europea para la Investigación Nuclear), y luego en el IETF (Internet Engineering Task Force).
+Versiones 
+HTML 2.0 Publicado en 1995
+HTML 3.2 Publicado en 1997
+HTML 4.01 Publicado en 1999
+HTML 5 Publicado en 2014
+
+2)
+-las tecnologías deben ser compatibles con versiones anteriores
+-las especificaciones y las implementaciones deben coincidir incluso si esto significa cambiar la especificación en lugar de las implementaciones
+-las especificaciones deben ser lo suficientemente detalladas como para que las implementaciones interoperabilidad completa sin ingeniería inversa entre sí.
+
+3)
+Desaprobado:
+Un elemento o atributo desaprobado es aquel que ha quedado anticuado por la presencia de estructuras nuevas. Los elementos desaprobados se definen 
+en el manual de referencia en los lugares apropiados, pero claramente marcados como desaprobados. Los elementos desaprobados pueden declararse obsoletos en versiones 
+futuras de HTML.
+Obsoletos:
+Un elemento o atributo obsoleto es aquél para el cual no hay garantía de soporte por parte de un agente de usuario. Los elementos obsoletos han dejado de 
+estar definidos en la especificación, pero se enumeran por motivos históricos en la sección de cambios del manual de referencia.
+
+4)Una DTD es un documento SGML que incluye las reglas sintácticas para un tipo de documento específico. Incluye los elementos que se permiten y sus atributos, 
+así como reglas que afectan a la anidación de los primeros y a los valores de los segundos.
+El DTD comienza con una serie de definiciones de entidades paramétricas. 
+
+
+HTML 4.01 especifica tres DTDs, de modo que los autores deben incluir una de las siguientes declaraciones del tipo de documento en sus documentos. 
+Los DTDs varían en cuanto a los elementos que soportan.
+
+-El DTD HTML 4.01 Estricto (Strict DTD) incluye todos los elementos y atributos que no han sido desaprobados o que no aparecen en documentos con marcos. 
+-El DTD HTML 4.01 Transicional (Transitional DTD) incluye todo lo que incluye el DTD estricto más los elementos y atributos desaprobados 
+(la mayoría de los cuales están relacionados con la presentación visual).
+-El DTD HTML 4.01 para Documentos con Marcos (Frameset DTD) incluye todo lo que incluye el DTD Transicional más los marcos. 
+
+5)
+Metadatos: Marco de Descripción de Recursos(ResourceDescription Framework) del W3C (ver [RDF10]) se convirtió en Recomendación del W3C en
+febrero de 1999. Permite a los autores especificar metadatos legibles por máquina sobre documentos HTML y otros recursos accesibles por la red.
+El elemento META puede utilizarse para identificar propiedades de un documento (p.ej., el autor, la fecha de caducidad, una lista de palabras clave, etc.) y para asignar
+valores a esas propiedades. Puede utilizarse el atributo lang de META para especificar el idioma del valor del atributo content.
+
+El HTML permite a los autores especificar metadatos -- 
+En general, la especificación de metadatos implica dos pasos:
+Declaración de una propiedad y de un valor para esta propiedad. Esto puede hacerse de dos maneras:
+--Desde dentro de un documento, por medio del elemento META.
+--Desde fuera de un documento, vinculando los metadatos por medio del elemento LINK (véase la sección sobre tipos de vínculos).
+Referencia a un perfil en el que se definen la propiedad y sus valores legales. Para designar un perfil, se usa el atributo profile del elemento HEAD.

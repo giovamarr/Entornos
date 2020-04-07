@@ -1,0 +1,68 @@
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML
+se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos
+(nombre y valor), aclarando si es obligatorio.
+
+2.a)
+Se coloca en cualquier parte del documento
+Comentario 
+<!-- Código controlado el día 12/08/2009 →-->
+
+2.b)
+Se coloca en el body o head del documento
+Contenedor que dira "Contenido del bloque1"
+etiquetas: 
+<div>
+atributos:
+id que es bloque1 
+
+2.c)
+Se coloca en el body o head del documento
+Imagen 
+etiquetas: 
+<img>
+atributos:
+src ""              Obligatorio
+alt  lugar imagen 
+id  im1            
+name    im1        
+width   32          
+height  32         
+longdesc    detalles    
+
+2.d)
+al principio del documento
+Metadato
+etiquetas: 
+<meta>
+atributos:
+name="keywords
+lang="es
+content="casa, compra, venta, alquiler "
+content="16-Sep-2019 7:49 PM"
+http-equiv="expires"
+
+2.e)
+Se coloca en el body o head del documento
+Hypervinculo
+etiquetas: 
+<a>
+atributos:
+href="http://www.e-style.com.ar/resumen.html"  Obligatorio
+type="text/html"
+hreflang="es"
+charset="utf-8"
+rel="help"
+
+2.f)
+Se coloca generalmente en el body 
+Tabla
+etiquetas: 
+<table>
+    width="200" 
+    summary="Datos correspondientes al ejercicio vencido"
+<caption>
+    align="top"
+<tr>
+<th>
+    scope="col"
+<td>
