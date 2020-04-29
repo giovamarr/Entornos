@@ -1,0 +1,54 @@
+1)CSS (en inglés Cascading Style Sheets) es lo que se denomina lenguaje de hojas de estilo en cascada y se usa para estilizar elementos escritos en un lenguaje de marcado como HTML. CSS separa el contenido de la representación visual del sitio. Es un mecanismo
+simple que describe cómo se va a mostrar un documento en la pantalla, o cómo se va
+a imprimir, o incluso cómo va a ser pronunciada la información presente en ese
+documento a través de un dispositivo de lectura. Esta forma de descripción de estilos
+ofrece a los desarrolladores el control total sobre estilo y formato de sus documentos.
+
+2)Reglas en CSS:
+Selector: Es la referencia a la etiqueta, id o clase HTML.
+Declaración: Incluye las propiedades a aplicar al selector indicado.
+Propiedad: Indica el atributo a modificar.
+Valor: El valor asignado a la propiedad.
+
+3)*Utilizando una hoja de estilo externa que estara vinculada a un documento a traves del elemento <link>, el cual debe ir situado en la seccion <head>
+*Utilizando el elemnto <style> en el interior del documento al que se quiere dar estilo, y que generalmente se situaria en la seccion <head>. De esta forma los estilos seran reconocidos antes de que la pagina se cargue por completo.
+*Utilizando estilos directamente sobre aquellos elementos que lo permiten a traves del atributo <style> dentro de <body> 
+
+4)Selectores:
+*Selector de tipo
+Selecciona todos los elementos que coinciden con el nombre del elemento especificado.
+Sintaxis: eltname
+Ejemplo: input se aplicará a cualquier elemento <input>.
+*Selector de clase
+Selecciona todos los elementos que tienen el atributo de class especificado.
+Sintaxis: .classname
+Ejemplo: .index seleccionará cualquier elemento que tenga la clase "index".
+*Selector de ID
+Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un determinado ID dentro de un documento.
+Sintaxis: #idname
+Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".
+*Selector universal
+Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.
+Sintaxis: * ns|* *|*
+Ejemplo: * se aplicará a todos los elementos del documento.
+*Selector de atributo
+Selecciona elementos basándose en el valor de un determinado atributo.
+Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+Ejemplo: [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).\
+
+5) Las pseudo clases son determinadas palabras clave que se añaden a los selectores para especificar diferentes estados. Si los elementos a los que se aplican dichos selectores cumplen con estas condiciones o estados, se aplican los estilos.
+Las pseudo-clases de enlace :link y :visited
+La pseudo clase :link (o a:link) permite especificar el aspecto de los enlaces que todavía no han sido visitados.
+La pseudo clase :visited (o a:visited) permite especificar el aspecto de los enlaces que sí han sido visitados.
+
+6)La herencia en CSS es el mecanismo mediante el cual determinadas propiedades de un elemento padre se transmiten a sus hijos.
+Todos los elementos de un documento HTML heredan todas las propiedades heredables de su padre excepto el elemento raíz (html), que no tiene progenitor.
+
+7)Es el mecanismo que controla el resultado final cuando se aplican varias declaraciones CSS contrapuestas al mismo elemento.
+Hay tres conceptos principales que controlan el orden en el que se aplican las declaraciones de CSS:
+
+Importancia.
+
+Especificidad.
+
+Orden en las fuentes.

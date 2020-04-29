@@ -1,0 +1,40 @@
+Dadas las siguientes declaraciones:
+
+* {color:green; }
+a:link {color:gray }
+a:visited{color:blue }
+a:hover {color:fuchsia }
+a:active {color:red }
+p {font-family: arial,helvetica;font-size: 10px;color:black; }
+.contenido{font-size: 14px;font-weight: bold; }
+
+
+Analizar los siguientes códigos y comparar sus efectos. Explicar:
+
+<body>
+<p class="contenido" style="font-weight: normal;">
+Este es un texto ...............</p>                                     parrafo con estilo combinado de p y .contenido( font-size: 14px, font-weight: normal;; font-family: arial,helvetica; color:black;)
+<table>
+<tr>
+<td>Y esta es una tabla.......</td>                                     luego genera una tabla con la primera celda con letras verdes del estilo *
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con un                           y en la segunda celda un link que utiliza los estilos de a y sus pseudo-clases 
+enlace</a></td>
+</tr>
+</table>
+</body>
+
+-------------------------------------------
+<body class="contenido">
+<p> Este es un texto................</p>                                 es igual al otro ekemplo pero el primer párrafo usa el estilo de p en lugar del estilo de .contenido
+<table>
+<tr>
+<td>Y esta es una tabla.......</td>
+</tr>
+<tr>
+<td><a href="http://www.google.com.ar">con
+un enlace</a></td>
+</tr>
+</table>
+</body>
