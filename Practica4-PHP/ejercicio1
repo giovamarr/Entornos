@@ -1,0 +1,32 @@
+En el siguiente código identificar:
+• las variables y su tipo
+• los operadores
+• las funciones y sus parámetros
+• las estructuras de control
+• cuál es la salida por pantalla
+
+<?php
+function doble($i) {                        funcion con parametro i
+ return $i*2;                               y devuelve el doble de i 
+}
+$a = TRUE;                                  variable boolean
+$b = "xyz";                                 variable string 
+$c = 'xyz';                                 variable string
+$d = 12;                                    variable integer
+echo gettype($a);                       |
+echo gettype($b);                       |   funcion gettype         
+echo gettype($c);                       | sale por pantalla los tipos de cada variable
+echo gettype($d);                       |
+if (is_int($d)) {                        Estructura de Control if
+ $d += 4;                                  operador
+}
+if (is_string($a)) {                    Estructura de Control if
+ echo "Cadena: $a";
+}
+$d = $a ? ++$d : $d*3;                  Operador ternario
+$f = doble($d++);                       variable int que obtiene el valor de la funcion doble con parametro d (17)
+$g = $f += 10;                          Operador binario
+echo $a, $b, $c, $d, $f , $g;           
+?> 
+
+la salida por pantalla va a ser booleanstringstringinteger1xyzxyz184444 

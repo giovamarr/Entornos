@@ -1,0 +1,86 @@
+2)Indicar si los siguientes códigos son equivalentes.
+
+a)
+<?php
+$i = 1;
+while ($i <= 10) {
+ print $i++;
+}
+?>
+
+<?php
+$i = 1;
+while ($i <= 10):                           Los tres codigos imprimen lo mismo: 12345678910
+ print $i;                                  utilizando while
+ $i++;
+endwhile;
+?>
+
+<?php
+$i = 0;
+do {
+ print ++$i;
+} while ($i<10);
+?>
+
+b)
+<?php                                                           Los cuatro codigos imprimen lo mismo: 12345678910
+for ($i = 1; $i <= 10; $i++) {                                  utilizando for
+ print $i;
+}
+?>
+
+<?php
+for ($i = 1; $i <= 10; print $i, $i++) ;
+?>
+
+<?php
+for ($i = 1; ;$i++) {
+ if ($i > 10) {
+ break;
+ }
+ print $i;
+}
+?>
+
+<?php
+$i = 1;
+for (;;) {
+ if ($i > 10) {
+ break;
+ }
+ print $i;
+ $i++;
+}
+?>
+
+c)
+<?php
+…
+…
+if ($i == 0) {
+ print "i equals 0";
+} elseif ($i == 1) {
+ print "i equals 1";
+} elseif ($i == 2) {
+ print "i equals 2";
+}
+?>                                                      Ambos codigos sirven para el mismo proposito,
+                                                        que es, a partir del valor de una variable mostrar en pantalla un texto
+<?php
+…
+…
+switch ($i) {
+ case 0:
+ print "i equals 0";
+ break;
+ case 1:
+ print "i equals 1";
+ break;
+ case 2:
+ print "i equals 2";
+ break;
+}
+?>
+
+En todos los casos los codigos sirven para lo mismo pero estan escritos con diferentes usos de operaciones, estructuras de control, etc.

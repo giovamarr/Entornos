@@ -1,0 +1,18 @@
+Indicar si los siguientes códigos son equivalentes
+
+<?php
+$a = array( 'color' => 'rojo',
+ 'sabor' => 'dulce',
+ 'forma' => 'redonda',
+ 'nombre' => 'manzana',
+ 4
+ );
+?>                                                      Si, son distintas formas de declarar un array
+
+<?php
+$a['color'] = 'rojo';
+$a['sabor'] = 'dulce';
+$a['forma'] = 'redonda';
+$a['nombre'] = 'manzana';
+$a[] = 4;
+?> 
